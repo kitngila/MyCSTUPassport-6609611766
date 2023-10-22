@@ -16,11 +16,23 @@ body{
 .headline h2{
     margin: 0;
 }
-main{
-    display: flex;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+@media only screen and (min-width: 750px){
+    main{
+        display: flex;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }   
+}
+@media only screen and (max-width: 749px){
+    main{
+        display: flex;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+    }   
 }
 .inmain{
     width: 100%;
@@ -37,13 +49,15 @@ img{
     border: 10px solid rgb(226, 135, 157);
     background-color: rgb(166, 179, 206);
 }
-.info1 p{
-    padding-top: 70px;
-}
-.info2{
-    text-align: center;
-    border: 10px solid rgb(226, 135, 157);
-    background-color: rgb(166, 179, 206);
+@media only screen and (min-width: 750px){
+    .info1 p{
+        padding-top: 70px;
+    }
+    .info2{
+        text-align: center;
+        border: 10px solid rgb(226, 135, 157);
+        background-color: rgb(166, 179, 206);
+    }    
 }
 video{
     padding-top: 5%;
