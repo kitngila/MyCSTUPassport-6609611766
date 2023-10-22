@@ -37,11 +37,24 @@ body{
 .inmain{
     width: 100%;
 }
-img{
-    float: left;
-    height:300px;
-    width: 300px;
-    padding-left: 10%;
+@media only screen and (max-width: 749px){
+    img{
+        float: left;
+        height:300px;
+        width: 300px;
+        padding-left: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (min-width: 750px){
+    img{
+        float: left;
+        height:300px;
+        width: 300px;
+        padding-left: 10%;
+    }
 }
 .info1{
     text-align: center;
@@ -59,10 +72,32 @@ img{
         background-color: rgb(166, 179, 206);
     }    
 }
-video{
-    padding-top: 5%;
-    height: 500px;
-    width: 500px;
+@media only screen and (max-width: 749px){
+    .info1 p{
+        padding-top: 0px;
+    }
+    .info2{
+        text-align: center;
+        border: 10px solid rgb(226, 135, 157);
+        background-color: rgb(166, 179, 206);
+    }    
+}
+@media only screen and (max-width: 749px){
+    video{
+        padding-top: 5%;
+        height: 500px;
+        width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (min-width: 750px){
+    video{
+        padding-top: 5%;
+        height: 500px;
+        width: 500px;
+    }
 }
 .blank1{
     text-align: center;
